@@ -1,0 +1,20 @@
+.service-card {
+  background-color: $bg-color-grey;
+}
+
+.service-card__title {
+  font-family: $additional-font;
+  color: $additional-color-text;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.service-card__description {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.service-card__link {
+  @include base-link($additional-color-text);
+}
