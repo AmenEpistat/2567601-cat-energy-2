@@ -1,0 +1,18 @@
+.hero {
+  font-family: $additional-font;
+  color: #ffffff;
+}
+
+.hero__wrapper {
+  background-color: rgba(#68b738, 0.85);
+}
+
+.hero__title {
+  line-height: 36px;
+}
+
+.hero__description {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
