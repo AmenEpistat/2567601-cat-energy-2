@@ -7,15 +7,15 @@
 
 /* BLOCKS */
 @import "./blocks/page.scss";
+@import "./blocks/button.scss";
+@import "./blocks/title.scss";
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/container.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main.scss";
-@import "./blocks/title.scss";
 @import "./blocks/hero.scss";
-@import "./blocks/button.scss";
 @import "./blocks/services.scss";
 @import "./blocks/service-card.scss";
 @import "./blocks/working.scss";
@@ -23,14 +23,14 @@
 @import "./blocks/slider.scss";
 @import "./blocks/invitation.scss";
 @import "./blocks/contacts-info.scss";
-// @import "./blocks/products.scss";
-// @import "./blocks/product-card.scss";
-// @import "./blocks/card-more.scss";
-// @import "./blocks/additional-products.scss";
-// @import "./blocks/additional-card.scss";
-// @import "./blocks/banner.scss";
-// @import "./blocks/subscribe.scss";
-// @import "./blocks/form.scss";
+@import "./blocks/products.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/card-more.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/additional-card.scss";
+@import "./blocks/banner.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/form.scss";
 @import "./blocks/main-footer.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/logo-academy.scss";

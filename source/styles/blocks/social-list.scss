@@ -3,5 +3,5 @@
 }
 
 .social-list__link {
-  @include base-link($additional-font);
+  @include base-link($additional-color-text);
 }

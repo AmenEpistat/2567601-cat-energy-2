@@ -3,11 +3,10 @@
 }
 
 .service-card__title {
-  font-family: $additional-font;
+  @include subtitle;
   color: $additional-color-text;
   font-size: 24px;
   line-height: 37px;
-  text-transform: uppercase;
 }
 
 .service-card__description {
@@ -17,4 +16,7 @@
 
 .service-card__link {
   @include base-link($additional-color-text);
+  @include subtitle;
+  font-size: 16px;
+  line-height: 16px;
 }
