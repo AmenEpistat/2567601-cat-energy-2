@@ -11,4 +11,5 @@
 
 .main-nav__link {
   @include base-link(#000000);
+  text-transform: uppercase;
 }
