@@ -1,1 +1,11 @@
-//
+.main-header__toggle {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: 0;
+  background: #ffffff url("../../icons/stack.svg#icon-open") no-repeat;
+}
+
+.main-header__toggle--closed {
+  background-image: url("../../icons/stack.svg#nav-close");
+}
