@@ -17,8 +17,12 @@
   <header class="main-header">
     <div class="main-header__wrapper container">
       <a class="main-header__logo logo" href="index.html">
-        <img class="logo__image" src="#" width="33" height="38" alt="Торговый знак - кот.">
-        <img class="logo__slogan" src="#" alt="Логотип - CAT ENERGY." width="101" height="18">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Торговый знак - кот.">
+        </picture>
+        <img class="logo__slogan" src="images/logo-slogan.svg" width="101" height="18" alt="Логотип Cat Energy.">
       </a>
       <button class="main-header__toggle main-header__toggle--closed" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -359,8 +363,10 @@
           </li>
         </ul>
         <div class="main-footer__logo-academy logo-academy">
-          <a class="logo-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="logo-academy__text">HTML Academy</span>
+          <a class="logo-academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <svg class="logo-academy__img" width="27" height="34">
+              <use href="icons/stack.svg#logo-html"></use>
+            </svg>
           </a>
         </div>
       </div>

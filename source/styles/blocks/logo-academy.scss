@@ -2,4 +2,13 @@
   @include base-link($primary-color-text);
   font-size: 14px;
   line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-academy__img {
+  fill: #666666;
+  width: 27px;
+  height: 34px;
 }
