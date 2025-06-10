@@ -1,20 +1,22 @@
 .main-header {
   @media (min-width: $tablet) {
-    display: grid;
     grid-template-columns: 1fr 2fr;
+    display: grid;
     align-items: center;
+    padding: 25px 24px 25px 34px;
   }
 }
 
 .main-header__wrapper {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding-block: 13px 14px;
   align-items: center;
+  padding-block: 13px 14px;
 
   @media (min-width: $tablet) {
-    grid-template-columns: 1fr;
-    padding-block: 25px;
+    display: flex;
+    padding: 0;
+    justify-content: flex-start;
   }
 }
 
@@ -26,7 +28,8 @@
 
   @media (min-width: $tablet) {
     justify-content: flex-start;
-    gap: 13px;
+    gap: 16px;
+    margin-left: 0;
   }
 }
 
@@ -51,7 +54,7 @@
 }
 
 .main-header__nav {
-  @media (min-width: $tablet) {
-    margin-right: 34px;
-  }
+  // @media (min-width: $tablet) {
+  //   margin-right: 34px;
+  // }
 }
