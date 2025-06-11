@@ -1,5 +1,12 @@
 .social-list {
   @include base-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  @media (min-width: $tablet) {
+    justify-self: center;
+  }
 }
 
 .social-list__link {

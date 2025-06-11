@@ -47,15 +47,15 @@
 }
 
 .main-nav__link {
-  @include base-link(#000000);
+  @include base-link($additional-color-text);
   text-transform: uppercase;
   padding: 10px;
-
-  // @media (min-width: $tablet) {
-  //   padding: 15px;
-  // }
 
   @media (min-width: $desktop) {
     color: #ffffff;
   }
+}
+
+.main-nav__link--dark {
+  color: $additional-color-text;
 }
