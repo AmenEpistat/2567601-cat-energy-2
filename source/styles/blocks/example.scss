@@ -1,5 +1,11 @@
 .example {
   background-color: $additional-bg-color;
+  padding-block: 20px 35px;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 .example__wrapper {
@@ -23,27 +29,58 @@
 .example__description {
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__list {
   @include base-list;
   display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+}
+
+.example__item {
+  outline: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 124px;
+  min-height: 56px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .example__item-subtitle {
   font-size: 24px;
   line-height: 24px;
+  margin: 0;
   color: $additional-color-text;
   font-family: $additional-font;
+  text-transform: uppercase;
 }
 
 .example__item-signature {
   font-size: 12px;
   line-height: 12px;
+  margin: 0;
+  position: absolute;
+  bottom: -15px;
+  text-align: center;
+  background-color: $additional-bg-color;
+  padding: 5px 5px 0;
+  right: auto;
+  max-width: 77px;
+  left: auto;
 }
 
 .example__summary {
   font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
   line-height: 20px;
   color: $additional-color-text;
   font-family: $additional-font;
