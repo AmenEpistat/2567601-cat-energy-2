@@ -22,3 +22,16 @@
   background-color: #666666;
   justify-self: end;
 }
+
+.logo-academy__link:hover::after {
+  background-color: $primary-bg-color;
+}
+
+.logo-academy__link:focus::after {
+  background-color: $primary-bg-color;
+}
+
+.logo-academy__link:active::after {
+  background-color: $primary-bg-color;
+  opacity: 0.3;
+}

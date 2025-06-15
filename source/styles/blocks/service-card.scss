@@ -1,7 +1,8 @@
 .service-card {
   background-color: $additional-bg-color;
-  padding: 30px 20px;
+  padding: 30px 20px 18px;
   position: relative;
+  min-height: 266px;
 }
 
 .service-card::before {
@@ -41,7 +42,7 @@
   color: $additional-color-text;
   font-size: 24px;
   line-height: 37px;
-  margin: 0 0 0 29px;
+  margin: 0 0 29px 29px;
   padding-left: 40px;
 }
 
@@ -49,6 +50,10 @@
 .service-card__description {
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .service-card__link {
@@ -63,10 +68,23 @@
   content: "";
   display: block;
   top: 5px;
-  right: -40px;
+  left: 100px;
+  right: 0;
   width: 24px;
   height: 12px;
   position: absolute;
   mask-image: url("../../icons/stack.svg#arrow");
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
   background-color: #000000;
+  transition: all 0.3s linear;
+}
+
+.service-card__link:hover::after {
+  width: 32px;
+}
+
+.service-card__link:active {
+  opacity: 0.3;
 }

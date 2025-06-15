@@ -73,7 +73,7 @@
 .hero__description {
   font-size: 14px;
   line-height: 14px;
-  margin-bottom: 29px;
+  margin-bottom: 32px;
   text-transform: uppercase;
   text-align: center;
   margin-top: 0;
@@ -96,6 +96,7 @@
   width: 100%;
   padding: 10px;
   padding-inline: 25px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet) {
     // position: absolute;
