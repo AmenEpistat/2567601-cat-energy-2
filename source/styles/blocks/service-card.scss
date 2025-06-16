@@ -2,7 +2,10 @@
   background-color: $additional-bg-color;
   padding: 30px 20px 18px;
   position: relative;
-  min-height: 266px;
+
+  @media (min-width: $tablet) {
+    padding: 77px 63px 53px 53px;
+  }
 }
 
 .service-card::before {
@@ -14,6 +17,13 @@
   height: 50px;
   border-radius: 50%;
   top: 21px;
+
+  @media (min-width: $tablet) {
+    width: 200px;
+    height: 200px;
+    top: 93px;
+    right: 60px;
+  }
 }
 
 .service-card::after {
@@ -23,18 +33,37 @@
   position: absolute;
   z-index: 1;
   top: 18px;
+
+  @media (min-width: $tablet) {
+    top: 80px;
+  }
 }
 
 .service-card--slim::after {
   background: url("../../icons/stack.svg#cat-slim") no-repeat;
   width: 36px;
   left: 27px;
+
+  @media (min-width: $tablet) {
+    height: 194px;
+    width: 140px;
+    right: 86px;
+    left: auto;
+  }
 }
 
 .service-card--pro::after {
   background: url("../../icons/stack.svg#cat-pro") no-repeat;
   width: 67px;
   left: 10px;
+
+  @media (min-width: $tablet) {
+    height: 112px;
+    width: 268px;
+    right: 22px;
+    top: 139px;
+    left: auto;
+  }
 }
 
 .service-card__title {
@@ -44,6 +73,14 @@
   line-height: 37px;
   margin: 0 0 29px 29px;
   padding-left: 40px;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+  }
 }
 
 
@@ -54,6 +91,16 @@
   margin-bottom: 15px;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 57px;
+    padding: 0;
+    border: none;
+    display: block;
+    width: 340px;
+  }
 }
 
 .service-card__link {
@@ -62,6 +109,11 @@
   font-size: 16px;
   line-height: 16px;
   position: relative;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .service-card__link::after {
@@ -79,6 +131,11 @@
   mask-position: center;
   background-color: #000000;
   transition: all 0.3s linear;
+
+  @media (min-width: $tablet) {
+    left: 125px;
+    top: 10px;
+  }
 }
 
 .service-card__link:hover::after {

@@ -5,6 +5,10 @@
   justify-content: space-between;
   padding: 25px 20px;
 
+  @media (min-width: $tablet) {
+    padding: 60px 70px;
+  }
+
   @media (min-width: $desktop) {
     padding: 60px 80px;
   }
@@ -16,6 +20,11 @@
   font-size: 16px;
   margin: 0;
   line-height: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts-info__address {
@@ -26,7 +35,10 @@
 
   @media (min-width: $tablet) {
     text-align: right;
-    font-size: 14px;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   @media (min-width: $desktop) {

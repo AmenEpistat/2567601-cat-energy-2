@@ -15,11 +15,13 @@
 
   @media (min-width: $tablet) {
     background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 0;
   }
 
   @media (min-width: $desktop) {
     background: 0 0;
-    display: grid;
     grid-template-columns: 424px 532px;
   }
 }
@@ -46,7 +48,8 @@
   @media (min-width: $tablet) {
     max-width: 420px;
     margin-left: 86px;
-    padding-top: 65px;
+    padding-top: 40px;
+    order: -2;
   }
 
   @media (min-width: $desktop) {
@@ -89,6 +92,10 @@
 .hero__image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    z-index: -1;
+  }
 }
 
 .hero__button {
@@ -99,11 +106,12 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet) {
-    // position: absolute;
-    // z-index: 1;
-    // min-width: 244px;
-    // width: max-content;
-    // top: 270px;
-    // left: 120px;
+    z-index: 1;
+    min-width: 244px;
+    width: max-content;
+    margin-top: 27px;
+    order: -1;
+    margin-left: 86px;
+    min-height: 54px;
   }
 }

@@ -1,11 +1,28 @@
 .example {
   background-color: $additional-bg-color;
   padding-block: 20px 35px;
+
+  @media (min-width: $tablet) {
+    padding-block: 45px 98px;
+    background-image: linear-gradient(#ffffff 57%, #eaeaea 57%);
+  }
+}
+
+.example__text {
+  @media (min-width: $tablet) {
+    margin-bottom: 99px;
+  }
 }
 
 .example__title {
   margin: 0;
   margin-bottom: 35px;
+  line-height: 40px;
+
+  @media (min-width: $tablet) {
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .example__wrapper {
@@ -17,7 +34,7 @@
 .example__checklist {
   @media (min-width: $tablet) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
   }
 
@@ -31,6 +48,12 @@
   line-height: 18px;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 56px;
+  }
 }
 
 .example__list {
@@ -39,6 +62,11 @@
   gap: 32px;
   flex-wrap: wrap;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet) {
+    gap: 43px;
+    margin-bottom: 0;
+  }
 }
 
 .example__item {
@@ -50,6 +78,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet) {
+    width: 162px;
+    min-height: 72px;
+  }
 }
 
 .example__item-subtitle {
@@ -59,6 +92,11 @@
   color: $additional-color-text;
   font-family: $additional-font;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__item-signature {
@@ -71,8 +109,16 @@
   background-color: $additional-bg-color;
   padding: 5px 5px 0;
   right: auto;
-  max-width: 77px;
+  width: 77px;
   left: auto;
+
+  @media (min-width: $tablet) {
+    line-height: 14px;
+    bottom: -5px;
+    width: 135px;
+    display: block;
+    font-size: 14px;
+  }
 }
 
 .example__summary {
@@ -85,6 +131,16 @@
   color: $additional-color-text;
   font-family: $additional-font;
   justify-self: end;
+
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    text-align: right;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
 
   @media (min-width: $desktop) {
     justify-self: start;
