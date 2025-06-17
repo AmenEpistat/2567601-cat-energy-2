@@ -1,6 +1,12 @@
+.banner {
+  padding-block: 35px;
+}
+
 .banner__wrapper {
   background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), image-set("../images/banner-background-mobile@1x.jpg" 1x type("image/jpg"), "../images/banner-background-mobile@2x.jpg" 2x type("image/jpg")), linear-gradient(#333333);
   background-repeat: no-repeat;
+  min-height: 290px;
+  padding: 58px 60px 43px;
   background-position: center;
 
   @media (min-width: $tablet) {
@@ -12,7 +18,10 @@
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
   text-align: center;
+  display: block;
+  width: 161px;
 }
 
 .banner__text::before {

@@ -3,16 +3,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-block: 7px 40px;
 }
 
 .subscribe__title {
   font-size: 24px;
   line-height: 24px;
+  align-self: flex-start;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .subscribe__text {
   color: $additional-color-text;
   font-family: $additional-font;
   font-size: 16px;
+  margin: 0;
   line-height: 24px;
+  text-align: center;
+  margin-bottom: 24px;
 }

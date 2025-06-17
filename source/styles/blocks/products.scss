@@ -1,5 +1,7 @@
 .products__title {
   line-height: 36px;
+  margin: 0;
+  margin-block: 27px 41px;
 }
 
 .products__list {
@@ -19,9 +21,32 @@
 }
 
 .products__item {
-  min-height: 324px;
+  min-height: 209px;
+  position: relative;
 
   @media (min-width: $tablet) {
     background-color: #f2f2f2;
   }
+}
+
+.products__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -24px;
+  left: -24px;
+  min-width: 100%;
+  height: 1px;
+  background-color: #ebebeb;
+}
+
+.products__item:last-child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -24px;
+  left: -24px;
+  min-width: 100%;
+  height: 1px;
+  background-color: #ebebeb;
 }

@@ -7,11 +7,19 @@
 }
 
 .invitation__wrapper {
+  @media (min-width: $tablet) {
+    background-color: #ffffff;
+  }
+
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0 max-content;
   }
+}
+
+.invitation__wrapper--color {
+  background-color: #f2f2f2;
 }
 
 .invitation__map-image {

@@ -1,3 +1,7 @@
+.additional-products {
+  padding-top: 25px;
+}
+
 .additional-products__wrapper {
   @media (min-width: $desktop) {
     display: flex;
@@ -8,6 +12,8 @@
 
 .additional-products__title {
   font-size: 24px;
+  margin: 0;
+  margin-bottom: 36px;
   line-height: 24px;
 }
 
@@ -29,4 +35,8 @@
   @media (min-width: $desktop) {
     border-inline: none;
   }
+}
+
+.additional-products__item:last-child {
+  border-bottom: 1px solid #cdcdcd;
 }
