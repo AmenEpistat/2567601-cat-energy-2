@@ -1,16 +1,26 @@
 .example {
-  background-color: $additional-bg-color;
+  background-color: #eaeaea;
   padding-block: 20px 35px;
 
   @media (min-width: $tablet) {
     padding-block: 45px 98px;
     background-image: linear-gradient(#ffffff 57%, #eaeaea 57%);
   }
+
+  @media (min-width: $desktop) {
+    padding-block: 30px;
+    background-image: linear-gradient(#ffffff 24%, $additional-bg-color 24%);
+  }
 }
 
 .example__text {
   @media (min-width: $tablet) {
     margin-bottom: 99px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 436px;
+    margin-bottom: 26px;
   }
 }
 
@@ -23,11 +33,16 @@
     line-height: 60px;
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__wrapper {
   @media (min-width: $desktop) {
     display: flex;
+    gap: 224px;
   }
 }
 
@@ -40,6 +55,7 @@
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr;
+    gap: 51px;
   }
 }
 
@@ -53,6 +69,10 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 69px;
   }
 }
 
@@ -106,7 +126,7 @@
   position: absolute;
   bottom: -15px;
   text-align: center;
-  background-color: $additional-bg-color;
+  background-color: #eaeaea;
   padding: 5px 5px 0;
   right: auto;
   width: 77px;
@@ -117,7 +137,12 @@
     bottom: -5px;
     width: 135px;
     display: block;
+    background-color: #ffffff;
     font-size: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $additional-bg-color;
   }
 }
 
@@ -145,5 +170,12 @@
   @media (min-width: $desktop) {
     justify-self: start;
     display: flex;
+    gap: 65px;
+  }
+}
+
+.example__slider {
+  @media (min-width: $desktop) {
+    height: 512px;
   }
 }

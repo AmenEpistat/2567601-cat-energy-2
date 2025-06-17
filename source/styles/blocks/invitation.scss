@@ -1,14 +1,17 @@
 .invitation__text {
   @media (min-width: $desktop) {
-    position: absolute;
+    margin-top: 95px;
     z-index: 1;
-    top: 95px;
-    left: 110px;
+    margin-left: 110px;
   }
 }
 
 .invitation__wrapper {
-  position: relative;
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0 max-content;
+  }
 }
 
 .invitation__map-image {

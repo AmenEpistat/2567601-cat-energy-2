@@ -16,6 +16,11 @@
 
 .slider__image {
   overflow: hidden;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .slider__image--before {

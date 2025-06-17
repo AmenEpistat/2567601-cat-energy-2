@@ -1,6 +1,10 @@
 .main-footer {
   background-color: $additional-bg-color;
   padding-block: 40px;
+
+  @media (min-width: $desktop) {
+    padding-block: 52px;
+  }
 }
 
 .main-footer__wrapper {
