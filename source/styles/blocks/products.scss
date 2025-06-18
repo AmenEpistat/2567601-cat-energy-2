@@ -7,6 +7,10 @@
     margin-block: 39px 84px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop) {
+    margin-block: 15px 85px;
+  }
 }
 
 .products__list {
@@ -64,4 +68,3 @@
     height: 0;
   }
 }
-
