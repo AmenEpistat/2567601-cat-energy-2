@@ -2,6 +2,10 @@
   background-color: $additional-bg-color;
   padding-block: 40px;
 
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+  }
+
   @media (min-width: $desktop) {
     padding-block: 52px;
   }

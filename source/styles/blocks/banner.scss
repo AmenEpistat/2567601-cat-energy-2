@@ -1,16 +1,21 @@
 .banner {
   padding-block: 35px;
+
+  @media (min-width: $tablet) {
+    padding-block: 70px 72px;
+  }
 }
 
 .banner__wrapper {
   background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), image-set("../images/banner-background-mobile@1x.jpg" 1x type("image/jpg"), "../images/banner-background-mobile@2x.jpg" 2x type("image/jpg")), linear-gradient(#333333);
   background-repeat: no-repeat;
-  min-height: 290px;
-  padding: 58px 60px 43px;
+  background-size: cover;
+  padding: 59px 58px 44px;
   background-position: center;
 
   @media (min-width: $tablet) {
     background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), image-set("../images/banner-background-tablet@1x.jpg" 1x type("image/jpg"), "../images/banner-background-tablet@2x.jpg" 2x type("image/jpg")), linear-gradient(#333333);
+    padding: 57px 125px 62px 75px;
   }
 }
 
@@ -21,7 +26,15 @@
   margin: 0;
   text-align: center;
   display: block;
-  width: 161px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 100%;
+  }
 }
 
 .banner__text::before {
@@ -31,4 +44,9 @@
   height: 80px;
   background: url("../../icons/stack.svg#icon-gift") no-repeat center;
   margin: 0 auto 48px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    flex-shrink: 0;
+  }
 }
