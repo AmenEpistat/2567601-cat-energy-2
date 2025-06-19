@@ -20,9 +20,31 @@
 
 .invitation__wrapper--color {
   background-color: #f2f2f2;
+
+  @media (min-width: $desktop) {
+    background-color: #ffffff;
+  }
+}
+
+.invitation__map {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0 max-content;
+}
+
+.invitation__map iframe {
+  z-index: 1;
+  width: 100%;
+  display: block;
+  border: none;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
 }
 
 .invitation__map-image {
   display: block;
+  z-index: -1;
   width: 100%;
 }

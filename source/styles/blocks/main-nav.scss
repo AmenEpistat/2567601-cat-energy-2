@@ -28,6 +28,11 @@
     gap: 33px;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 720px;
+    margin-left: 90px;
+  }
 }
 
 .main-nav__item {
@@ -58,6 +63,26 @@
 
   @media (min-width: $desktop) {
     background-color: #ffffff;
+    top: 31px;
+  }
+}
+
+.main-nav__item--current-catalog::before {
+  @media (min-width: $tablet) {
+    content: "";
+    display: block;
+    width: 100%;
+    top: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    background-color: $primary-bg-color;
+    height: 2px;
+    transition: all 0.3s ease;
+  }
+
+  @media (min-width: $desktop) {
+    color: $primary-bg-color;
     top: 31px;
   }
 }

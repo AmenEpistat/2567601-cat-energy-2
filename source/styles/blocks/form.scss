@@ -6,6 +6,13 @@
     grid-template-columns: 3fr 2fr;
     align-self: stretch;
     padding-bottom: 40px;
+    padding-inline: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 752px;
+    margin: 0 auto;
+    padding-bottom: 62px;
   }
 }
 
@@ -20,6 +27,10 @@
   @media (min-width: $tablet) {
     margin-bottom: 0;
     border-right: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 496px;
   }
 }
 

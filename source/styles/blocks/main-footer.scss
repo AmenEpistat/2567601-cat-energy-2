@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding-block: 52px;
+    padding-block: 58px;
   }
 }
 
@@ -28,6 +28,13 @@
 
   @media (min-width: $tablet) {
     margin: 0;
+  }
+}
+
+.main-footer__logo .logo__slogan {
+  @media (min-width: $desktop) {
+    width: 128px;
+    height: 24px;
   }
 }
 
