@@ -148,11 +148,14 @@
   @include base-link($additional-color-text);
   @include subtitle;
   font-size: 16px;
-  line-height: 16px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
 
   @media (min-width: $tablet) {
     font-size: 20px;
+    gap: 25px;
     line-height: 20px;
   }
 }
@@ -160,17 +163,12 @@
 .service-card__link::after {
   content: "";
   display: block;
-  top: 5px;
-  left: 100px;
-  right: 0;
-  width: 24px;
+  width: 32px;
   height: 12px;
-  position: absolute;
-  mask-image: url("../../icons/stack.svg#arrow");
-  mask-size: 100%;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: #000000;
+  background-image: url("../../icons/stack.svg#arrow");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -8px;
   transition: all 0.3s linear;
 
   @media (min-width: $tablet) {
@@ -180,8 +178,8 @@
 }
 
 .service-card__link:hover::after {
-  width: 33px;
-  height: 13px;
+  background-position: 0;
+  opacity: 1;
 }
 
 .service-card__link:active {

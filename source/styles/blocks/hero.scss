@@ -28,7 +28,7 @@
 
   @media (min-width: $desktop) {
     background: 0 0;
-    grid-template-columns: 1fr;
+    grid-template-columns: 425px;
     grid-template-rows: max-content auto;
     padding-left: 80px;
   }
@@ -37,8 +37,8 @@
 .hero__wrapper::before {
   @media (min-width: $desktop) {
     background-image: linear-gradient(to right, #ffffff 50%, rgba(#68b738, 0.85) 50%), image-set("../images/hero-background-desktop@1x.jpg" 1x type("image/jpg"), "../images/hero-background-desktop@2x.jpg" 2x type("image/jpg")), linear-gradient(#8c8b8b);
-    background-position: center, 720px 0;
-    background-size: 100%, 1040px 694px;
+    background-position: center, right top;
+    background-size: 100%, 720px 694px;
     background-repeat: no-repeat;
     background-color: #312f2f;
     content: "";

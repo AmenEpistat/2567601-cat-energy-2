@@ -1,8 +1,11 @@
 .invitation__text {
   @media (min-width: $desktop) {
     margin-top: 95px;
-    z-index: 1;
     margin-left: 110px;
+    margin-bottom: 106px;
+    position: relative;
+    width: 565px;
+    min-height: 199px;
   }
 }
 
@@ -14,7 +17,7 @@
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0 max-content;
+    grid-template-rows: 1fr;
   }
 }
 
@@ -27,24 +30,22 @@
 }
 
 .invitation__map {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0 max-content;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .invitation__map iframe {
-  z-index: 1;
   width: 100%;
   display: block;
   border: none;
 
   @media (min-width: $tablet) {
-    height: 400px;
+    min-height: 400px;
+    height: 100%;
   }
 }
 
 .invitation__map-image {
   display: block;
-  z-index: -1;
-  width: 100%;
+  min-width: 100%;
 }

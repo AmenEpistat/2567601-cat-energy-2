@@ -7,7 +7,7 @@
   @media (min-width: $tablet) {
     grid-template-columns: 1fr;
     background-image: linear-gradient(#ffffff 16%, $additional-bg-color 16%);
-    grid-template-rows: repeat(3, max-content);
+    grid-template-rows: max-content 1fr min-content;
     align-items: center;
     justify-content: center;
     padding: 10px 37px 40px;

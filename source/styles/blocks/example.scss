@@ -4,12 +4,12 @@
 
   @media (min-width: $tablet) {
     padding-block: 45px 98px;
-    background-image: linear-gradient(#ffffff 57%, #eaeaea 57%);
+    background-image: linear-gradient(to top, #eaeaea 462px, #ffffff 462px, #ffffff 100%);
   }
 
   @media (min-width: $desktop) {
     padding-block: 30px;
-    background-image: linear-gradient(#ffffff 24%, $additional-bg-color 24%);
+    background-image: linear-gradient(#ffffff 145px, $additional-bg-color 145px, $additional-bg-color 100%);
   }
 }
 
@@ -89,32 +89,26 @@
   }
 }
 
-.example__item {
-  outline: 1px solid #cdcdcd;
-  border-radius: 3px;
-  width: 124px;
-  min-height: 56px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: $tablet) {
-    width: 162px;
-    min-height: 72px;
-  }
-}
-
 .example__item-subtitle {
   font-size: 24px;
   line-height: 24px;
   margin: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   color: $additional-color-text;
   font-family: $additional-font;
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 124px;
+  min-height: 56px;
+
 
   @media (min-width: $tablet) {
     font-size: 30px;
+    width: 162px;
+    min-height: 72px;
     line-height: 37px;
   }
 }
@@ -122,21 +116,18 @@
 .example__item-signature {
   font-size: 12px;
   line-height: 12px;
-  margin: 0;
-  position: absolute;
-  bottom: -15px;
+  margin: -10px auto 0;
   text-align: center;
   background-color: #eaeaea;
-  padding: 5px 5px 0;
-  right: auto;
-  width: 77px;
-  left: auto;
+  padding: 0 10px;
+  width: min-content;
 
   @media (min-width: $tablet) {
     line-height: 14px;
-    bottom: -5px;
-    width: 135px;
-    display: block;
+    width: max-content;
+    max-width: 145px;
+    padding: 0 5px;
+    display: flex;
     background-color: #ffffff;
     font-size: 14px;
   }

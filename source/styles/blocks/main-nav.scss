@@ -9,6 +9,7 @@
     display: block;
     font-size: 18px;
     line-height: 24px;
+    align-self: center;
   }
 
   @media (min-width: $desktop) {
@@ -30,7 +31,6 @@
   }
 
   @media (min-width: $desktop) {
-    max-width: 720px;
     margin-left: 90px;
   }
 }
